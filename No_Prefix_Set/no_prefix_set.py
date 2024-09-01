@@ -72,7 +72,7 @@ def no_prefix_naive(ws: list[str]) -> str:
         str: either "GOOD SET" or "BAD SET"
     """
     for i, w1 in enumerate(ws):
-        for w2 in ws[i+1:]:
+        for w2 in ws[i + 1 :]:
             if w1.startswith(w2) or w2.startswith(w1):
                 return "BAD SET"
 
@@ -121,27 +121,28 @@ def test_no_prefix(
         case_tested.add(expected)
 
         idx_n = actual.find("\n")
-        assert expected == actual[:idx_n if idx_n > 0 else len(actual)], f"ERROR: test {t} fails"
+        assert (
+            expected == actual[: idx_n if idx_n > 0 else len(actual)]
+        ), f"ERROR: test {t} fails"
 
     assert sorted(list(case_tested)) == ["BAD SET", "GOOD SET"]
 
 
 def test_performance_no_prefix():
-    """Test that largest input execute in reasonable time
-    """
+    """Test that largest input execute in reasonable time"""
     rng = np.random.default_rng(0)
     letters = [chr(i) for i in range(ORD_A, ORD_A + N_LETTERS)]
 
     words = [
-            "".join(
-                rng.choice(
-                    letters,
-                    size=rng.integers(low=30, high=60),
-                    replace=True,
-                )
+        "".join(
+            rng.choice(
+                letters,
+                size=rng.integers(low=30, high=60),
+                replace=True,
             )
-            for _ in range(100_000)
-        ]
+        )
+        for _ in range(100_000)
+    ]
 
     s = time.time()
     _ = no_prefix_impl(words)

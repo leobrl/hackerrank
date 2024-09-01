@@ -71,7 +71,7 @@ def find_min_substring(string: list[str], sub_string: list[str]) -> tuple[int, i
 
 
 def steady_gene_min_sub_string(gene: str) -> tuple[int, int]:
-    """solve the steady gene problem
+    """Solves the steady gene problem
 
     Args:
         gene (str): a string of length n, where n is divisible by 4.
@@ -94,7 +94,7 @@ def steady_gene_min_sub_string(gene: str) -> tuple[int, int]:
 
 
 def steady_gene(gene: str) -> int:
-    """Find the length of the smallest substring to replace in gene
+    """Finds the length of the smallest substring to replace in gene
     so that all bases occurs exactly the same number of times.
 
     Args:
@@ -111,11 +111,7 @@ def steady_gene(gene: str) -> int:
 
 @pytest.mark.parametrize(
     "n_tests, gene_len",
-    [
-        (100, 4),       # cornercases
-        (5, 500_000), # stress test
-        (1000, 100)     # general
-    ]
+    [(100, 4), (5, 500_000), (1000, 100)],  # cornercases  # stress test  # general
 )
 def test_steady_gene_impl_with_random_input(n_tests: int, gene_len: int):
     """Parameterized test of steady_gene_min_sub_string
@@ -159,6 +155,7 @@ def test_steady_gene_impl_with_random_input(n_tests: int, gene_len: int):
         counter = Counter(gene)
         for x in set(gene):
             assert counter[x] == expected_m
+
 
 # Run test from cmd:
 # python -m pytest ./Bear_and_Steady_Gene/bear_and_steady_gene.py
