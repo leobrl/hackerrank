@@ -11,6 +11,11 @@ Problem https://www.hackerrank.com/challenges/one-week-preparation-kit-no-prefix
 \
 Find if any string in a list is a prefix for any of the other strings.
 
+### Larry's array
+Problem https://www.hackerrank.com/challenges/larrys-array/problem
+\
+Determine if an array can be sorted by selecting three consecutive elements any number of time and cycling them clockwise.
+
 ### Lego Blocks
 Problem https://www.hackerrank.com/challenges/lego-blocks/problem
 \
