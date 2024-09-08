@@ -1,5 +1,10 @@
 ## Problems
 
+### Activity Notifcation
+Problem: https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem
+\
+Calculate the median of a stream of data over a given window
+
 ### Almost Sorted
 Problem: https://www.hackerrank.com/challenges/almost-sorted/problem
 \
