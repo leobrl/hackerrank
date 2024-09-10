@@ -16,6 +16,12 @@ Problem: https://www.hackerrank.com/challenges/bear-and-steady-gene
 \
 Find smallest substring that contains all letters in a given set.
 
+### Hackerland radio transmitter
+
+Problem: https://www.hackerrank.com/challenges/hackerland-radio-transmitters/problem
+\
+Find minimum tessellation of a subsegment on a segment
+
 ### Larry's array
 Problem: https://www.hackerrank.com/challenges/larrys-array/problem
 \
