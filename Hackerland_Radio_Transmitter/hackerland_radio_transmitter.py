@@ -18,13 +18,13 @@ def radio_trasmitters(x: list[int], k: int) -> int:
 
     res = 0
     while c < n:
-        while c + 1 < n and x[c+1] - x[l] <= k:
+        while c + 1 < n and x[c + 1] - x[l] <= k:
             c = c + 1
 
         res += 1
         r = c
 
-        while r + 1 < n and x[r+1] - x[c] <= k:
+        while r + 1 < n and x[r + 1] - x[c] <= k:
             r = r + 1
 
         l, c, r = r + 1, r + 1, r + 1
@@ -37,8 +37,8 @@ def radio_trasmitters(x: list[int], k: int) -> int:
     [
         ([1, 2, 3, 4, 5], 1, 2),
         ([7, 2, 4, 6, 5, 9, 12, 11], 2, 3),
-        ([5, 4, 3, 2, 1], 1, 2)
-    ]
+        ([5, 4, 3, 2, 1], 1, 2),
+    ],
 )
 def test_radio_trasmitter(x: list[int], k: int, expected: int):
     """Test radio_transmitter function against given testcases
@@ -50,6 +50,7 @@ def test_radio_trasmitter(x: list[int], k: int, expected: int):
     """
     actual = radio_trasmitters(x, k)
     assert actual == expected
+
 
 # Run test from cmd:
 # python -m pytest ./Hackerland_Radio_Transmitter/hackerland_radio_transmitter.py

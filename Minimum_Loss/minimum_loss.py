@@ -34,18 +34,15 @@ def minimum_loss_naive(numbers: list[int]) -> int:
     res = 10**10
     for i, buy in enumerate(numbers):
         for sell in numbers[i:]:
-            v = (buy - sell)
+            v = buy - sell
             if v > 0 and v < res:
                 res = v
 
     return res
 
 
-@pytest.mark.parametrize(
-    "n_tests, max_price, size",
-    [(100, 100, 20)]
-)
-def test_minimum_loss(n_tests: int, max_price: int, size:int):
+@pytest.mark.parametrize("n_tests, max_price, size", [(100, 100, 20)])
+def test_minimum_loss(n_tests: int, max_price: int, size: int):
     """Test minimum loss against naive implementatioj
 
     Args:
@@ -64,6 +61,7 @@ def test_minimum_loss(n_tests: int, max_price: int, size:int):
         expected = minimum_loss_naive(prices)
 
         assert res == expected, f"ERROR {i}"
+
 
 # Run test from cmd:
 # python -m pytest ./Minimum_Loss/minimum_loss.py
