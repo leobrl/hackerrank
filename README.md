@@ -21,10 +21,15 @@ Find smallest substring that contains all letters in a given set.
 
 
 ### Hackerland radio transmitter
-
 Problem: https://www.hackerrank.com/challenges/hackerland-radio-transmitters/problem
 \
 Find minimum tessellation of a subsegment on a segment
+
+
+### Larry's array
+Problem: https://www.hackerrank.com/challenges/richie-rich/problem
+\
+Find the largest palindrome that can be constructed by changing at most k digits in a number
 
 
 ### Larry's array
@@ -42,7 +47,7 @@ Combinatorics calculation.
 ### Lily's Homework
 Problem: https://www.hackerrank.com/challenges/lilys-homework/problem
 \
-Find number of swap to sort an array in ascending or descending order.
+Find number of swap to sort an array in ascending or descending.
 
 
 ### Minimum Loss
