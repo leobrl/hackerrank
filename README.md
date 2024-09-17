@@ -26,7 +26,7 @@ Problem: https://www.hackerrank.com/challenges/hackerland-radio-transmitters/pro
 Find minimum tessellation of a subsegment on a segment
 
 
-### Larry's array
+### Highest VAlue Palindrome
 Problem: https://www.hackerrank.com/challenges/richie-rich/problem
 \
 Find the largest palindrome that can be constructed by changing at most k digits in a number
@@ -48,6 +48,12 @@ Combinatorics calculation.
 Problem: https://www.hackerrank.com/challenges/lilys-homework/problem
 \
 Find number of swap to sort an array in ascending or descending.
+
+
+### Maximum Palindromes
+Problem: https://www.hackerrank.com/challenges/maximum-palindromes/problem
+\
+Find the number of the longest palindromes that can be built from a given string.
 
 
 ### Minimum Loss
