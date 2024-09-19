@@ -53,7 +53,7 @@ Find number of swap to sort an array in ascending or descending.
 ### Maximum Palindromes
 Problem: https://www.hackerrank.com/challenges/maximum-palindromes/problem
 \
-Find the number of the longest palindromes that can be built from a given string.
+Dynamic programming problem. Find the number of the longest palindromes that can be built from a given string.
 
 
 ### Minimum Loss
@@ -65,4 +65,10 @@ Find the minimum positive difference of consecutive elements.
 ### No Prefix Set
 Problem: https://www.hackerrank.com/challenges/one-week-preparation-kit-no-prefix-set
 \
-Find if any string in a list is a prefix for any of the other strings.
+Trie problem. Find if any string in a list is a prefix for any of the other strings.
+
+
+### Short Palindrome
+Problem: https://www.hackerrank.com/challenges/short-palindrome
+\
+Dynamic programming problem. Find the number of four letter palidromes that can be built from a given string.
