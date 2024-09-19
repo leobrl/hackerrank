@@ -42,7 +42,7 @@ def short_palindrome(s: str) -> int:
 
         counter[idx] += 1 # this is just to speed matrix update.
 
-    return result
+    return result % Constants.BIG_NUMBER
 
 
 @pytest.mark.parametrize(
