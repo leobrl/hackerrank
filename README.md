@@ -68,6 +68,11 @@ Problem: https://www.hackerrank.com/challenges/one-week-preparation-kit-no-prefi
 Trie problem. Find if any string in a list is a prefix for any of the other strings.
 
 
+### Sherlock And Anagram
+Problem: https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem
+\
+Simple counting problem, I was not able to solve with dynamic programming
+
 ### Short Palindrome
 Problem: https://www.hackerrank.com/challenges/short-palindrome
 \
