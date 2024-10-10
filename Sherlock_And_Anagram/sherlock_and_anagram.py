@@ -1,14 +1,23 @@
 import pytest
 from collections import defaultdict
 
-def sherlock_and_anagram(s: str):
+
+def sherlock_and_anagram(s: str) -> int:
+    """Find the number of substring pairs in s that are anagram
+
+    Args:
+        s (str): the input string
+
+    Returns:
+        int: the number of anagrams
+    """
 
     s = list(s)
     anagrams = 0
     for length in range(1, len(s)):
         counter = defaultdict(int)
         for start in range(len(s) - length + 1):
-            key = "".join(sorted(s[start:start + length]))
+            key = "".join(sorted(s[start : start + length]))
 
             anagrams += counter[key]
 
@@ -18,17 +27,12 @@ def sherlock_and_anagram(s: str):
 
 
 @pytest.mark.parametrize(
-    "s, expected",
-    [
-        ("abba", 4),
-        ("kkkk", 10),
-        ("ifailuhkqq", 3),
-        ("cdcd", 5)
-    ]
+    "s, expected", [("abba", 4), ("kkkk", 10), ("ifailuhkqq", 3), ("cdcd", 5)]
 )
 def test_sherlock_and_anagram(s, expected):
     actual = sherlock_and_anagram(s)
     assert actual == expected
+
 
 # Run test from cmd:
 # python -m pytest ./Sherlock_And_Anagram/sherlock_and_anagram.py

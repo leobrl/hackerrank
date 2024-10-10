@@ -20,6 +20,12 @@ Problem: https://www.hackerrank.com/challenges/bear-and-steady-gene
 Find smallest substring that contains all letters in a given set.
 
 
+### Common Child
+Problem: https://www.hackerrank.com/challenges/common-child/problem
+Dynamic programming problem: find the longest string that can be built from the common elements of two
+input strings, maintaining the order.
+
+
 ### Hackerland radio transmitter
 Problem: https://www.hackerrank.com/challenges/hackerland-radio-transmitters/problem
 \
@@ -72,6 +78,7 @@ Trie problem. Find if any string in a list is a prefix for any of the other stri
 Problem: https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem
 \
 Simple counting problem, I was not able to solve with dynamic programming
+
 
 ### Short Palindrome
 Problem: https://www.hackerrank.com/challenges/short-palindrome

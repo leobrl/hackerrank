@@ -35,12 +35,16 @@ def short_palindrome(s: str) -> int:
         result += almost_palindrome[idx] % Constants.BIG_NUMBER
 
         for i, v in enumerate(matrix[idx]):
-            almost_palindrome[i] += v # this works because if v > 0 it is at least the second time we have seen element e
+            almost_palindrome[
+                i
+            ] += v  # this works because if v > 0 it is at least the second time we have seen element e
 
         for i, v in enumerate(counter):
-            matrix[idx][i] += v  # equivalent to adding 1 for every letter in s before e.
+            matrix[idx][
+                i
+            ] += v  # equivalent to adding 1 for every letter in s before e.
 
-        counter[idx] += 1 # this is just to speed matrix update.
+        counter[idx] += 1  # this is just to speed matrix update.
 
     return result % Constants.BIG_NUMBER
 
@@ -54,11 +58,12 @@ def short_palindrome(s: str) -> int:
         ("caacabaabbbaaaacbbabcbbcccbccb", 2397),
         ("cccbcabccbbabbccacbbcbaacbbbcb", 3170),
         ("acaacbaabcbcaaccaacbbacbcccaca", 3101),
-    ]
+    ],
 )
 def test_short_palindrome(s, expected):
     actual = short_palindrome(s)
     assert actual == expected
+
 
 # Run test from cmd:
 # python -m pytest ./Short_Palindrome/short_palindrome.py
