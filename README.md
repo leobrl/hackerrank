@@ -80,6 +80,12 @@ Problem: https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem
 Simple counting problem, I was not able to solve with dynamic programming
 
 
+### Sherlock And Cost
+Problem: https://www.hackerrank.com/challenges/sherlock-and-cost/problem
+\
+Dynamic programming problem.
+
+
 ### Short Palindrome
 Problem: https://www.hackerrank.com/challenges/short-palindrome
 \
