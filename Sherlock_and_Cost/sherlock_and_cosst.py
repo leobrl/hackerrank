@@ -3,6 +3,14 @@ import numpy as np
 
 
 def cost(arr: list[int]) -> int:
+    """Find the array that maximize the cost. Cost is defined as the abs difference of consecutive elements.
+
+    Args:
+        arr (list[int]): input array
+
+    Returns:
+        int: the maximum cost
+    """
 
     def get_cost(_arr):
 
@@ -31,7 +39,16 @@ def cost(arr: list[int]) -> int:
     return max(res[-1])
 
 
-def cost_naive(arr):
+def cost_naive(arr: list[int]) -> int:
+    """Find the array that maximize the cost. Cost is defined as the abs difference of consecutive elements.
+    This implementation is used for testing, is not optimized and does not scale.
+
+    Args:
+        arr (list[int]): input array
+
+    Returns:
+        int: the maximum cost
+    """
 
     list_arrays = []
     res = 0
@@ -75,10 +92,17 @@ def cost_naive(arr):
     ],
 )
 def test_cost(arr: list[int], expected: int):
+    """Test against specific use cases
+
+    Args:
+        arr (list[int]): input array
+        expected (int): expected result
+    """
     assert cost(arr) == expected
 
 
 def test_cost_against_naive():
+    """Test implementation of the cost function against naive implementation"""
     rng = np.random.default_rng(0)
 
     for i in range(100):
