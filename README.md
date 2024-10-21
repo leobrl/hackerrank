@@ -26,6 +26,11 @@ Dynamic programming problem: find the longest string that can be built from the 
 input strings, maintaining the order.
 
 
+### Construct the Array
+Problem: https://www.hackerrank.com/challenges/construct-the-array/problem
+Dynamic programming problem: find how many arrays you can build under the constraint that consecutive
+elements must be different
+
 ### Hackerland radio transmitter
 Problem: https://www.hackerrank.com/challenges/hackerland-radio-transmitters/problem
 \
