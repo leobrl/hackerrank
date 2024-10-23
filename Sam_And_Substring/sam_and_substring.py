@@ -2,7 +2,16 @@ import pytest
 import numpy as np
 
 
-def substrings(str_num: str):
+def substrings(str_num: str) -> int:
+    """Given a number as a string, determine the sum of all integer values of substrings of the string
+
+    Args:
+        str_num (str): an integer as a string
+
+    Returns:
+        int: the sum of integer substrings
+    """
+
     BIG_NUMBER = 10**9 + 7
     n = len(str_num)
 
@@ -18,7 +27,15 @@ def substrings(str_num: str):
     return int(res) % BIG_NUMBER
 
 
-def substrings_naive(str_num: str):
+def substrings_naive(str_num: str) -> int:
+    """Naive implementation of substrings
+
+    Args:
+        str_num (str): an integer as a string
+
+    Returns:
+        int: the sum of integer substrings
+    """
     res = 0
     for i in range(0, len(str_num)):
         for j in range(i, len(str_num)):
@@ -32,6 +49,12 @@ def substrings_naive(str_num: str):
     [("16", 23), ("123", 164), ("404", 456), ("849", 1003), ("123456789", 167657325)],
 )
 def test_substrings(str_num, expected):
+    """Test
+
+    Args:
+        str_num (_type_): the input number
+        expected (_type_): the expected result
+    """
     assert substrings(str_num) == expected
 
 

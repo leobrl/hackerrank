@@ -79,6 +79,11 @@ Problem: https://www.hackerrank.com/challenges/one-week-preparation-kit-no-prefi
 Trie problem. Find if any string in a list is a prefix for any of the other strings.
 
 
+### Sam and Substring
+Problem: https://www.hackerrank.com/challenges/sam-and-substrings/problem
+\
+Dynamic programming problem. Find sum of all integer substring in a number as a string.
+
 ### Sherlock And Anagram
 Problem: https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem
 \
