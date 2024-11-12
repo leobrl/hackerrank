@@ -2,6 +2,7 @@ import pytest
 import numpy as np
 from itertools import combinations
 
+
 def max_subsequence(arr):
     positive_sum = sum(x for x in arr if x > 0)
     if positive_sum == 0:
@@ -37,9 +38,9 @@ def max_subarray_subsequence(arr):
 def max_subarray_naive(arr):
 
     m = min(arr)
-    for l in range(1, len(arr)+1):
-        for s in range(len(arr)-l+1):
-            v = sum(arr[s: s + l])
+    for l in range(1, len(arr) + 1):
+        for s in range(len(arr) - l + 1):
+            v = sum(arr[s : s + l])
             if v > m:
                 m = v
 
@@ -48,7 +49,7 @@ def max_subarray_naive(arr):
 
 def max_subsequence_naive(arr):
     m = min(arr)
-    for l in range(1, len(arr)+1):
+    for l in range(1, len(arr) + 1):
         for c in combinations(arr, l):
             v = sum(c)
             if v > m:
@@ -80,21 +81,11 @@ def test_max_subsequence():
     [
         ([2, -1, 2, 3, 4, -5], (10, 11)),
         ([-2, -3, -1, -4, -6], (-1, -1)),
-        ([1,2,3,4], (10, 10))
-    ]
+        ([1, 2, 3, 4], (10, 10)),
+    ],
 )
 def test_max_subarray_subsequence(arr, expected):
     assert max_subarray_subsequence(arr) == expected
-
-
-if __name__ == "__main__":
-    # #-2 -3 -1 -4 -6
-    # values = [2, -1, 2, 3, 4, -5]
-    # # values = [-2, -3, -1, -4, -6]
-    # a, b = max_subarray_subsequence(values)
-    # print(a, b)
-
-    test_max_subsequence()
 
 
 # Run test from cmd:

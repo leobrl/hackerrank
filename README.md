@@ -31,6 +31,7 @@ Problem: https://www.hackerrank.com/challenges/construct-the-array/problem
 Dynamic programming problem: find how many arrays you can build under the constraint that consecutive
 elements must be different
 
+
 ### Hackerland radio transmitter
 Problem: https://www.hackerrank.com/challenges/hackerland-radio-transmitters/problem
 \
@@ -61,6 +62,12 @@ Problem: https://www.hackerrank.com/challenges/lilys-homework/problem
 Find number of swap to sort an array in ascending or descending.
 
 
+### Max subarray
+Problem: https://www.hackerrank.com/challenges/maxsubarray/problem
+\
+Two part problem. One is a simple dynamic programming problem, the second part can be solved just with arithmetics.
+
+
 ### Maximum Palindromes
 Problem: https://www.hackerrank.com/challenges/maximum-palindromes/problem
 \
@@ -83,6 +90,7 @@ Trie problem. Find if any string in a list is a prefix for any of the other stri
 Problem: https://www.hackerrank.com/challenges/sam-and-substrings/problem
 \
 Dynamic programming problem. Find sum of all integer substring in a number as a string.
+
 
 ### Sherlock And Anagram
 Problem: https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem
