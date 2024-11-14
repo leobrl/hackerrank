@@ -108,3 +108,9 @@ Dynamic programming problem.
 Problem: https://www.hackerrank.com/challenges/short-palindrome
 \
 Dynamic programming problem. Find the number of four letter palidromes that can be built from a given string.
+
+
+### Stock Max
+Problem: https://www.hackerrank.com/challenges/stockmax/problem
+\
+Not really a dynamic programming problem
