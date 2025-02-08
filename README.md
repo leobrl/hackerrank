@@ -86,6 +86,12 @@ Problem: https://www.hackerrank.com/challenges/one-week-preparation-kit-no-prefi
 Trie problem. Find if any string in a list is a prefix for any of the other strings.
 
 
+### Red John
+Problem: https://www.hackerrank.com/challenges/red-john-is-back/problem
+\
+Dynamic programming problem. Find ways of arranging blocks, plus calculate number of primes less than a number n.
+
+
 ### Sam and Substring
 Problem: https://www.hackerrank.com/challenges/sam-and-substrings/problem
 \
